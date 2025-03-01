@@ -14,18 +14,17 @@
 <body class="bg-[#F4F7FF] px-24 pt-5">
     <nav class="navbar bg-base-100 shadow-sm flex flex-row justify-between items-center p-5 rounded-2xl bg-white">
         <div class="flex flex-row justify-start items-center">
-          <img src="assets/logo.png" alt="" class="w-12 h-12">
+          <img src="../assets/logo.png" alt="" class="w-12 h-12">
           <a class="btn btn-ghost text-4xl flex flex-row gap-0"><span class="font-normal">Dev</span><span class="font-bold">Board</span></a>
         </div>
         <div class="flex flex-row gap-3 justify-start items-center">
           <button id="task" class="flex flex-row justify-start items-center gap-2 bg-[#F4F7FF] rounded-[2rem] px-4 py-2">
-            <img src="assets/checkbox.png" alt="" class="w-6 h-6">
+            <img src="../assets/checkbox.png" alt="" class="w-6 h-6">
             <h1 class="text-[#1E1E1E] text-3xl font-bold" id="task-completed">23</h1>
           </button>
-          <button id="theme" class="bg-[#F4F7FF] rounded-[2rem] p-3">
-            <img src="assets/theme-btn.png" alt="" class="w-8 h-8">
+          <button id="theme" class="cursor-pointer bg-[#F4F7FF] rounded-[2rem] p-3">
+            <img src="../assets/theme-btn.png" alt="" class="w-8 h-8">
           </button>
-          <button id="back" class="hidden cursor-pointer text-white bg-[#3752FD] px-5 py-2.5 rounded-lg text-base font-medium">Back to Desk</button>
         </div>
     </nav>
 
@@ -35,7 +34,7 @@
         <div class="rounded-t-2xl navbar bg-base-100 px-5 pt-5 pb-8 grid grid-cols-4 justify-between items-center gap-3 border-b-2 border-dashed border-[#3752FD33]">
           <div class="flex flex-row justify-start items-center gap-4 bg-[#F4F7FF] rounded-xl p-5">
             <div class="bg-white rounded-full p-5 w-16 h-16">
-              <img src="assets/checkbox.png" alt="" class="w-5 h-5">
+              <img src="../assets/checkbox.png" alt="" class="w-5 h-5">
             </div>
             <div class="flex flex-col justify-center items-start">
               <h1 class="text-[#00303C] text-base font-medium">Task Assigned</h1>
@@ -44,13 +43,13 @@
           </div>
           <div id="discover" class="cursor-pointer col-span-2 flex flex-row justify-start items-center gap-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl p-5">
             <div class="border-[#F6F0E0] border-2 border-dashed">
-              <img src="assets/board.png" alt="" class="w-16 h-[4.5rem]">
+              <img src="../assets/board.png" alt="" class="w-16 h-[4.5rem]">
             </div>
             <p class="text-white text-2xl font-medium">Discover Something <br>New Today!</p>
           </div>
           <div class="flex flex-row justify-start items-center gap-4 bg-[#F4F7FF] rounded-xl p-5">
             <div class="bg-white rounded-full p-5 w-16 h-16">
-              <img src="assets/calender.png" alt="" class="w-5 h-5">
+              <img src="../assets/calender.png" alt="" class="w-5 h-5">
             </div>
             <div class="flex flex-col justify-center items-start">
               <h1 class="text-[#00303C] text-base font-medium" id="day">Wed,</h1>
@@ -153,7 +152,7 @@
       <div class="last bg-white rounded-2xl">
         <header class="flex flex-col justify-center items-center gap-3 mt-5 pb-5 border-dashed border-b-2 border-[#3752FD33]">
           <div class="flex flex-row justify-center items-center gap-3">
-            <img src="assets/activity.png" alt="">
+            <img src="../assets/activity.png" alt="">
             <h1 class="text-[#00303C] text-xl font-medium">Activity Log</h1>
           </div>
           <button class="bg-[#3752FD] cursor-pointer text-white text-base font-medium px-5 py-2.5 rounded-lg" id="clear-history">Clear History</button>
@@ -164,39 +163,9 @@
       </div>
     </div>
 
-
-    <div id="question" class="mt-5 pb-5 hidden">
-        <h1 class="text-2xl text-black font-bold text-center">Blogs</h1>
-        <div class="mt-5 flex flex-col gap-5">
-          <div class="bg-white rounded-xl">
-            <h1 class="text-base text-black font-bold px-5 py-5">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="text-base px-5 py-5 border-t-2 border-dashed border-[#cfcaca]">Selecting elements in the DOM (Document Object Model) is fundamental for manipulating web pages. There are several methods to achieve this. getElementById selects an element by its unique ID, making it ideal for targeting specific elements. getElementsByClassName retrieves all elements with a given class name, while getElementsByTagName collects elements with a specified tag name. More versatile methods include querySelector, which selects the first element that matches a CSS selector, and querySelectorAll, which gathers all matching elements.</p>
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <h1 class="text-base text-black font-bold px-5 py-5">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
-            <p class="text-base px-5 py-5 border-t-2 border-dashed border-[#cfcaca]">innerHTML, innerText, and textContent are properties used to retrieve or set the content of HTML elements, but they function differently. innerHTML allows you to access or modify the HTML content of an element, including tags and nested elements, making it powerful but potentially risky if not handled correctly due to XSS (Cross-Site Scripting) vulnerabilities. innerText retrieves or sets only the visible text within an element, considering CSS styling like display: none. Meanwhile, textContent returns or sets the text content of an element and all its descendants, ignoring any CSS styling but preserving the content even if it’s hidden.</p>
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <h1 class="text-base text-black font-bold px-5 py-5">Question-3: What is event delegation in the DOM?</h1>
-            <p class="text-base px-5 py-5 border-t-2 border-dashed border-[#cfcaca]">Event delegation is a technique where a single event listener is added to a parent element to manage events for multiple child elements. This approach leverages the concept of event propagation (specifically, event bubbling) in the DOM. When an event like a click occurs on a child element, the event bubbles up to the parent element, where it can be captured and processed. This technique is efficient because it minimizes the number of event listeners and allows dynamic handling of elements, even those added to the DOM after the event listener is registered.</p>
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <h1 class="text-base text-black font-bold px-5 py-5">Question-4: What is event bubbling in the DOM?</h1>
-            <p class="text-base px-5 py-5 border-t-2 border-dashed border-[#cfcaca]">Event bubbling is a process in the DOM where an event starts at the deepest target element and then bubbles up through its ancestor elements. For instance, if you click on a child element within a nested structure, the click event triggers on the child first and then sequentially on its parent, grandparent, and so on, until it reaches the root element. This bubbling mechanism allows higher-level elements to respond to events occurring in their descendants, facilitating techniques like event delegation.</p>
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <h1 class="text-base text-black font-bold px-5 py-5">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <p class="text-base px-5 py-5 border-t-2 border-dashed border-[#cfcaca]">Creating, adding, and removing elements in the DOM with JavaScript involves several methods. You can create a new element using document.createElement, specifying the type of element you need. Once created, this element can be added to the DOM using methods like appendChild to add it as the last child of a parent element or insertBefore for more specific positioning. Removing elements is straightforward with the remove method for direct removal or removeChild when you need to remove a specific child from its parent element. These methods allow dynamic manipulation of web pages, enabling the creation and deletion of content in response to user actions or other events.</p>
-          </div>
-        </div>
-    </div>
-
-
-    <script src="script.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/toggle.js"></script>
+    <script src="../script/theme.js"></script>
 </body>
 
 
