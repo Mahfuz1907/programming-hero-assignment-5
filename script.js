@@ -39,30 +39,42 @@ updateCurrentDate();
 
 
 
-const now = new Date();
-let hours = now.getHours();
-let minute = now.getMinutes();
-let second = now.getSeconds();
-let dayNight = '';
+function updateTime(){
+    const now = new Date();
+    let hours = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+    let dayNight = '';
 
-if(hours < 12){
-    dayNight = 'AM';
-}else{
-    dayNight = 'PM';
+    if(hours < 12){
+        dayNight = 'AM';
+    }else{
+        dayNight = 'PM';
+    }
+
+    if(hours === 0){
+        hours = 12;
+    }else if(hours > 12){
+        hours -= 12;
+    }
+
+    hours = hours.toString().padStart(2, '0');
+    minute = minute.toString().padStart(2, '0');
+    second = second.toString().padStart(2, '0');
+
+
+    const formattedTime = `${hours}:${minute}:${second} ${dayNight}`;
+    return formattedTime;
 }
 
-if(hours === 0){
-    hours = 12;
-}else if(hours > 12){
-    hours -= 12;
-}
 
-hours = hours.toString().padStart(2, '0');
-minute = minute.toString().padStart(2, '0');
-second = second.toString().padStart(2, '0');
+document.getElementById('clear-history').addEventListener("click", 
+    function(){
+        let completedPara = document.getElementById('complete-para');
+        completedPara.innerHTML = " ";
+    }
+)
 
-
-const formattedTime = `${hours}:${minute}:${second} ${dayNight}`;
 
 document.getElementById('complete-1').addEventListener("click", 
     function(){
@@ -80,8 +92,9 @@ document.getElementById('complete-1').addEventListener("click",
 
         const task1 = document.getElementById('task-1').innerText;
 
-        alert("You have completed the task: " + task1);
+        alert("Board updated successfully");
 
+        const formattedTime = updateTime();
 
         let p = document.createElement('p');
         p.innerHTML = `
@@ -89,7 +102,7 @@ document.getElementById('complete-1').addEventListener("click",
         `
         
         let completedPara = document.getElementById('complete-para');
-        completedPara.append(p);
+        completedPara.appendChild(p);
     }
 )
 
@@ -113,8 +126,9 @@ document.getElementById('complete-2').addEventListener("click",
 
         const task2 = document.getElementById('task-2').innerText;
 
-        alert("You have completed the task: " + task2);
+        alert("Board updated successfully");
 
+        const formattedTime = updateTime();
 
         let p = document.createElement('p');
         p.innerHTML = `
@@ -122,7 +136,7 @@ document.getElementById('complete-2').addEventListener("click",
         `
         
         let completedPara = document.getElementById('complete-para');
-        completedPara.append(p);
+        completedPara.appendChild(p);
     }
 )
 
@@ -145,7 +159,9 @@ document.getElementById('complete-3').addEventListener("click",
 
         const task3 = document.getElementById('task-3').innerText;
 
-        alert("You have completed the task: " + task3);
+        alert("Board updated successfully");
+
+        const formattedTime = updateTime();
 
 
         let p = document.createElement('p');
@@ -177,7 +193,9 @@ document.getElementById('complete-4').addEventListener("click",
 
         const task4 = document.getElementById('task-4').innerText;
 
-        alert("You have completed the task: " + task4);
+        alert("Board updated successfully");
+
+        const formattedTime = updateTime();
 
 
 
@@ -210,7 +228,9 @@ document.getElementById('complete-5').addEventListener("click",
 
         const task5 = document.getElementById('task-5').innerText;
 
-        alert("You have completed the task: " + task5);
+        alert("Board updated successfully");
+
+        const formattedTime = updateTime();
 
 
         let p = document.createElement('p');
@@ -242,7 +262,9 @@ document.getElementById('complete-6').addEventListener("click",
 
         const task6 = document.getElementById('task-6').innerText;
 
-        alert("You have completed the task: " + task6);
+        alert("Board updated successfully");
+
+        const formattedTime = updateTime();
 
 
         let p = document.createElement('p');
@@ -256,13 +278,6 @@ document.getElementById('complete-6').addEventListener("click",
 )
 
 
-
-document.getElementById('clear-history').addEventListener("click", 
-    function(){
-        let completedPara = document.getElementById('complete-para');
-        completedPara.remove();
-    }
-)
 
 
 
