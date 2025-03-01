@@ -257,6 +257,15 @@ document.getElementById('complete-6').addEventListener("click",
 
 
 
+document.getElementById('clear-history').addEventListener("click", 
+    function(){
+        let completedPara = document.getElementById('complete-para');
+        completedPara.remove();
+    }
+)
+
+
+
 
 
 
