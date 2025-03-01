@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0/themes.css" rel="stylesheet" type="text/css" />
+    <title>DevBoard</title>
+</head>
+<body class="bg-[#F4F7FF] px-24 pt-5">
+    <nav class="navbar bg-base-100 shadow-sm flex flex-row justify-between items-center p-5 rounded-2xl bg-white">
+        <div class="flex flex-row justify-start items-center">
+          <img src="assets/logo.png" alt="" class="w-12 h-12">
+          <a class="btn btn-ghost text-xl">DevBoard</a>
+        </div>
+        <div class="flex flex-row gap-3 justify-start items-center">
+          <button class="flex flex-row justify-start items-center gap-2 bg-[#F4F7FF] rounded-[2rem] px-4 py-2">
+            <img src="assets/checkbox.png" alt="" class="w-6 h-6">
+            <h1 class="text-[#1E1E1E] text-3xl font-bold">23</h1>
+          </button>
+          <button class="bg-[#F4F7FF] rounded-[2rem] p-3">
+            <img src="assets/theme-btn.png" alt="" class="w-8 h-8">
+          </button>
+        </div>
+    </nav>
+
+    <div class="content mt-5 pb-10 grid grid-cols-4 gap-5">
+      <div class="first bg-white rounded-2xl col-span-3">
+        <div class="rounded-t-2xl navbar bg-base-100 shadow-sm px-5 pt-5 pb-8 grid grid-cols-4 justify-between items-center gap-3 border-b-2 border-dashed border-[#3752FD33]">
+          <div class="flex flex-row justify-start items-center gap-4 bg-[#F4F7FF] rounded-xl p-5">
+            <div class="bg-white rounded-full p-5 w-16 h-16">
+              <img src="assets/checkbox.png" alt="" class="w-5 h-5">
+            </div>
+            <div class="flex flex-col justify-center items-start">
+              <h1 class="text-[#00303C] text-base font-medium">Task Assigned</h1>
+              <h1 class="text-[#00303C] text-4xl font-bold">05</h1>
+            </div>
+          </div>
+          <div class="col-span-2 flex flex-row justify-start items-center gap-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl p-5">
+            <div class="border-[#F6F0E0] border-2 border-dashed">
+              <img src="assets/board.png" alt="" class="w-16 h-[4.5rem]">
+            </div>
+            <p class="text-white text-2xl font-medium">Discover Something <br>New Today!</p>
+          </div>
+          <div class="flex flex-row justify-start items-center gap-4 bg-[#F4F7FF] rounded-xl p-5">
+            <div class="bg-white rounded-full p-5 w-16 h-16">
+              <img src="assets/calender.png" alt="" class="w-5 h-5">
+            </div>
+            <div class="flex flex-col justify-center items-start">
+              <h1 class="text-[#00303C] text-base font-medium">Wed,</h1>
+              <h1 class="text-[#00303C] text-2xl font-bold">Jul 28 2025</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- box starts here -->
+        <div class="px-5 py-5 grid grid-cols-3 gap-10">
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">ShopEase</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Fix Mobile Button Issue </h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">CloudSync</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Add Dark Mode</h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-2 rounded-lg">Store the user's preference in localStorage, update CSS...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">SwiftPay</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Optimize  Home page</h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Meta</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Add new emoji 🤲</h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Google LLC</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Integrate OpenAI API </h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+          <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
+            <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
+              <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Glassdoar</button>
+              <h1 class="text-[#00303C] text-2xl font-medium text-center">Improve Job searching </h1>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+            </div>
+            <div class="flex flex-row justify-between items-center gap-4">
+              <div class="flex flex-col justify-start items-start gap-1">
+                <h1 class="text-[#00303C] font-normal text-sm">Deadline</h1>
+                <h1 class="text-[#00303C] font-medium text-base">21 March 2025</h1>
+              </div>
+              <button class="text-white bg-[#3752FD] rounded-lg px-5 py-2.5">Completed</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="last bg-white rounded-2xl">
+        <header class="flex flex-col justify-center items-center gap-3 mt-5 pb-5 border-dashed border-b-2 border-[#3752FD33]">
+          <div class="flex flex-row justify-center items-center gap-3">
+            <img src="assets/activity.png" alt="">
+            <h1 class="text-[#00303C] text-xl font-medium">Activity Log</h1>
+          </div>
+          <button class="bg-[#3752FD] text-white text-base font-medium px-5 py-2.5 rounded-lg">Clear History</button>
+        </header>
+
+        <div class="para pl-8 pr-5 py-5 flex flex-col gap-5 justify-center items-center">
+          <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+          <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html> 
