@@ -39,6 +39,30 @@ updateCurrentDate();
 
 
 
+const now = new Date();
+let hours = now.getHours();
+let minute = now.getMinutes();
+let second = now.getSeconds();
+let dayNight = '';
+
+if(hours < 12){
+    dayNight = 'AM';
+}else{
+    dayNight = 'PM';
+}
+
+if(hours === 0){
+    hours = 12;
+}else if(hours > 12){
+    hours -= 12;
+}
+
+hours = hours.toString().padStart(2, '0');
+minute = minute.toString().padStart(2, '0');
+second = second.toString().padStart(2, '0');
+
+
+const formattedTime = `${hours}:${minute}:${second} ${dayNight}`;
 
 document.getElementById('complete-1').addEventListener("click", 
     function(){
@@ -61,7 +85,7 @@ document.getElementById('complete-1').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task1} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task1} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
@@ -94,7 +118,7 @@ document.getElementById('complete-2').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task2} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task2} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
@@ -126,7 +150,7 @@ document.getElementById('complete-3').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task3} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task3} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
@@ -159,7 +183,7 @@ document.getElementById('complete-4').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task4} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task4} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
@@ -191,7 +215,7 @@ document.getElementById('complete-5').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task5} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task5} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
@@ -223,13 +247,14 @@ document.getElementById('complete-6').addEventListener("click",
 
         let p = document.createElement('p');
         p.innerHTML = `
-                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task6} at 12:48:15 PM</p>
+                    <p class="bg-[#F4F7FF] rounded-lg p-3 text-base font-normal">You have Complete The Task ${task6} at ${formattedTime}</p>
         `
         
         let completedPara = document.getElementById('complete-para');
         completedPara.append(p);
     }
 )
+
 
 
 
