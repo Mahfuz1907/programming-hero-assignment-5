@@ -11,27 +11,27 @@
 
 
 
-<body class="bg-[#F4F7FF] px-3 sm:px-24 pt-5">
+<body class="bg-[#F4F7FF] px-3 sm:px-7 md:px-24 pt-5">
     <nav class="navbar bg-base-100 shadow-sm flex flex-row justify-between items-center p-5 rounded-2xl bg-white">
         <div class="flex flex-row justify-start items-center">
-          <img src="assets/logo.png" alt="" class="w-6 h-6 sm:w-12 sm:h-12">
-          <a class="btn btn-ghost text-xl sm:text-4xl flex flex-row gap-0"><span class="font-normal">Dev</span><span class="font-bold">Board</span></a>
+          <img src="assets/logo.png" alt="" class="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12">
+          <a class="btn btn-ghost text-xl sm:text-2xl md:text-4xl flex flex-row gap-0"><span class="font-normal">Dev</span><span class="font-bold">Board</span></a>
         </div>
-        <div class="flex flex-row gap-1 sm:gap-3 justify-start items-center">
+        <div class="flex flex-row gap-1 md:gap-3 justify-start items-center">
           <button id="task" class="flex flex-row justify-start items-center gap-2 bg-[#F4F7FF] rounded-[2rem] px-4 py-2">
-            <img src="assets/checkbox.png" alt="" class="w-4 h-4 sm:w-6 sm:h-6">
-            <h1 class="text-[#1E1E1E] text-xl sm:text-3xl font-bold" id="task-completed">23</h1>
+            <img src="assets/checkbox.png" alt="" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6">
+            <h1 class="text-[#1E1E1E] text-xl sm:text-2xl md:text-3xl font-bold" id="task-completed">23</h1>
           </button>
           <button id="theme" class="cursor-pointer bg-[#F4F7FF] rounded-[2rem] p-3">
-            <img src="assets/theme-btn.png" alt="" class="w-5 h-5 sm:w-8 sm:h-8">
+            <img src="assets/theme-btn.png" alt="" class="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8">
           </button>
         </div>
     </nav>
 
 
-    <div id="main" class="content mt-5 pb-10 grid grid-cols-1 sm:grid-cols-4 gap-5">
-      <div class="first bg-white rounded-2xl sm:col-span-3">
-        <div class="rounded-t-2xl navbar bg-base-100 px-5 pt-5 pb-8 grid grid-cols-1 sm:grid-cols-4 justify-between items-center gap-3 border-b-2 border-dashed border-[#3752FD33]">
+    <div id="main" class="content mt-5 pb-10 grid grid-cols-1 md:grid-cols-4 gap-5">
+      <div class="first bg-white rounded-2xl md:col-span-3">
+        <div class="rounded-t-2xl navbar bg-base-100 px-5 pt-5 pb-8 grid grid-cols-1 md:grid-cols-4 justify-between items-center gap-3 border-b-2 border-dashed border-[#3752FD33]">
           <div class="flex flex-row justify-start items-center gap-4 bg-[#F4F7FF] rounded-xl p-5">
             <div class="bg-white rounded-full p-5 w-16 h-16">
               <img src="assets/checkbox.png" alt="" class="w-5 h-5">
@@ -41,7 +41,7 @@
               <h1 class="text-[#00303C] text-4xl font-bold" id="task-remaining">6</h1>
             </div>
           </div>
-          <div id="discover" class="cursor-pointer sm:col-span-2 flex flex-row justify-start items-center gap-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl p-5">
+          <div id="discover" class="cursor-pointer md:col-span-2 flex flex-row justify-start items-center gap-4 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-xl p-5">
             <div class="sm:border-[#F6F0E0] sm:border-2 sm:border-dashed">
               <img src="assets/board.png" alt="" class="w-16 h-[4.5rem]">
             </div>
@@ -59,12 +59,12 @@
         </div>
 
         <!-- box starts here -->
-        <div class="px-5 py-5 grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div class="px-5 py-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div class="bg-[#F4F7FF] rounded-2xl mt-5 p-5 flex flex-col justify-center gap-3">
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">ShopEase</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-1">Fix Mobile Button Issue </h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
@@ -78,7 +78,7 @@
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">CloudSync</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-2">Add Dark Mode</h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-2 rounded-lg">Store the user's preference in localStorage, update CSS...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-2 rounded-lg">Store the user's preference in localStorage, update CSS...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
@@ -92,7 +92,7 @@
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">SwiftPay</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-3">Optimize  Home page</h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
@@ -106,7 +106,7 @@
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Meta</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-4">Add new emoji 🤲</h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
@@ -120,7 +120,7 @@
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Google LLC</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-5">Integrate OpenAI API </h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
@@ -134,7 +134,7 @@
             <div class="border-b-2 border-dashed border-[#3752FD33] pb-3 flex flex-col justify-start items-start gap-3">
               <button class="text-[#00303C] text-base font-normal bg-white px-4 py-2 rounded-lg">Glassdoar</button>
               <h1 class="text-[#00303C] text-2xl font-medium text-center" id="task-6">Improve Job searching </h1>
-              <p class="h-24 bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+              <p class="bg-white text-[#000000] text-base font-normal px-4 py-4 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
             </div>
             <div class="flex flex-row justify-between items-center gap-4">
               <div class="flex flex-col justify-start items-start gap-1">
