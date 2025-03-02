@@ -55,11 +55,14 @@ document.getElementById('clear-history').addEventListener("click",
 )
 
 
+
 document.getElementById('complete-1').addEventListener("click", 
     function(){
         let taskRemaining = parseInt(document.getElementById('task-remaining').innerText);
         taskRemaining -= 1;
+
         document.getElementById('task-remaining').innerText = taskRemaining;
+        
         document.getElementById('complete-1').style.opacity = '0.2';
 
         let taskCompleted = parseInt(document.getElementById('task-completed').innerText);
@@ -72,6 +75,11 @@ document.getElementById('complete-1').addEventListener("click",
         const task1 = document.getElementById('task-1').innerText;
 
         alert("Board updated successfully");
+    
+
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
 
         const formattedTime = updateTime();
 
@@ -107,6 +115,10 @@ document.getElementById('complete-2').addEventListener("click",
 
         alert("Board updated successfully");
 
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
+
         const formattedTime = updateTime();
 
         let p = document.createElement('p');
@@ -139,6 +151,10 @@ document.getElementById('complete-3').addEventListener("click",
         const task3 = document.getElementById('task-3').innerText;
 
         alert("Board updated successfully");
+
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
 
         const formattedTime = updateTime();
 
@@ -173,6 +189,10 @@ document.getElementById('complete-4').addEventListener("click",
         const task4 = document.getElementById('task-4').innerText;
 
         alert("Board updated successfully");
+
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
 
         const formattedTime = updateTime();
 
@@ -209,6 +229,10 @@ document.getElementById('complete-5').addEventListener("click",
 
         alert("Board updated successfully");
 
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
+
         const formattedTime = updateTime();
 
 
@@ -242,6 +266,10 @@ document.getElementById('complete-6').addEventListener("click",
         const task6 = document.getElementById('task-6').innerText;
 
         alert("Board updated successfully");
+
+        if(taskRemaining === 0){
+            alert("Congrats! You have completed all the current tasks");
+        }
 
         const formattedTime = updateTime();
 
